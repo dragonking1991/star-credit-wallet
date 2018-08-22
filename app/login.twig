@@ -1,0 +1,131 @@
+{% extends "./_templates/layout.twig" %}
+
+{# If rename this file, rename in gulp 'html' task as well #}
+{% block page %}
+<section class="sidebar show-md">
+	<figure></figure>
+	<p class="slogan">
+		Reach <span>for</span><br />
+		<span>the</span> Stars
+	</p>
+
+</section>
+<section class="section login">
+	<div class="container">
+		<ul class="tab">
+			<li class="'active"><a href="#login-content">Login</a></li>
+			<li><a href="#signup-content">Signup</a></li>
+		</ul>
+		<div class="tab__content" id="login-content">
+			<figure>
+				
+			</figure>
+			<p>Please enter a username and email address below to signup for an account. The first 100,000 signups will receive a free STRC</p>
+			<div class="input__wrapper">
+				<label for="user-login">Username or Email</label>
+				<input type="text" name="user-login" id="user-login">
+			</div>
+			<div class="input__wrapper">
+				<label for="pass">Password</label>
+				<input type="text" name="pass" id="pass">
+			</div>
+			<div class="btn-wrapper">
+				<a href="#" class="btn--green">Login</a>
+			</div>
+			<p>By joining, you are indicating that you have read, understood and agree our <a href="#" class="link">Terms & Conditions</a>.</p>
+		</div>
+
+		<div class="tab__content" id="sign-up">
+			<figure>
+				
+			</figure>
+			<p>Please enter a username and email address below to signup for an account. The first 100,000 signups will receive a free STRC</p>
+			<div class="input__wrapper">
+				<label for="user-signup">Username</label>
+				<input type="text" name="user-signup" id="user-signup">
+			</div>
+			<div class="input__wrapper">
+				<label for="email-signup">Email</label>
+				<input type="text" name="email-signup" id="email-signup">
+			</div>
+			<div class="btn-wrapper">
+				<a href="#" class="btn--green">Sign up</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section email-sent">
+	<div class="container">
+		<h3>Create password</h3>
+		<p>Please check your inbox and click on Reset Password.</p>
+		<div class="btn--wrapper">
+			<a href="#" class="back-link text-green">Back to Login</a>
+		</div>
+	</div>
+</section>
+
+<section class="section create-password">
+	<div class="container">
+		<h3>Create password</h3>
+		<p>Passwords need to be 8 characters in length and include at least one lowercase letter, uppercase letter, number and symbol.</p>
+
+		<div class="input__wrapper">
+			<label for="password-create">Password</label>
+			<input type="password" name="password-create" id="password-create">
+		</div>
+		<div class="input__wrapper">
+			<label for="repass-create">Repeat Password</label>
+			<input type="password" name="repass-create" id="repass-create">
+		</div>
+		<div class="checkbox__wrapper">
+			<label for="opt1">Check to enable 2-factor authentication.</label>
+			<input type="checkbox" name="opt1" id="opt1">
+		</div>
+		<div class="checkbox__wrapper">
+			<label for="opt2">I have read, understood and agree to the <a href="#" class="link">Terms & Conditions.</a></label>
+			<input type="checkbox" name="opt2" id="opt2">
+		</div>
+		<div class="btn-wrapper">
+			<a href="#" class="btn--green">Signup</a>
+		</div>
+	</div>
+</section>
+
+<section class="section authenticator">
+	<div class="container">
+		<h3>Authenticator passcode required</h3>
+		<p>Enter the six-digit code from your authenticator app. Two-factor authentication can be configured in Settings.</p>
+
+		<div class="input__wrapper">
+			<label for="verify">Verification code</label>
+			<input type="text" name="verify" id="verify">
+		</div>
+		<div class="btn-wrapper">
+			<a href="#" class="btn--green">Login</a>
+		</div>
+	</div>
+</section>
+
+<section class="section congratulate">
+	<div class="container">
+		<h3>Congratulations!</h3>
+		<p>Please check your inbox and click on Confirm.</p>
+	</div>
+</section>
+
+<section class="section recover">
+	<div class="container">
+		<h3>Recover password</h3>
+		<p>We will send you an email with a link to reset your password.</p>
+	</div>
+	<div class="input__wrapper">
+		<label for="username-email">Username or Email</label>
+		<input type="text" name="username-email" id="username-email">
+	</div>
+	<div class="btn-wrapper">
+		<a href="#" class="btn--green">send mail</a>
+	</div>
+</section>
+
+{% endblock %}

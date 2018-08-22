@@ -1,0 +1,173 @@
+{% extends "./_templates/layout.twig" %}
+
+{% block page %}
+<div class="container" data-module="Modal Axios">
+
+  <h1>Templates</h1>
+
+  <h2>Typography</h2>
+  <div class="row">
+    <div class="col-6">
+      <h1>h1. boilerplate heading</h1>
+      <h2>h2. boilerplate heading</h2>
+      <h3>h3. boilerplate heading</h3>
+      <h4>h4. boilerplate heading</h4>
+      <h5>h5. boilerplate heading</h5>
+      <h6>h6. boilerplate heading</h6>
+    </div>
+    <div class="col-6">
+      <p class="h1">h1. boilerplate heading</p>
+      <p class="h2">h2. boilerplate heading</p>
+      <p class="h3">h3. boilerplate heading</p>
+      <p class="h4">h4. boilerplate heading</p>
+      <p class="h5">h5. boilerplate heading</p>
+      <p class="h6">h6. boilerplate heading</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-6">
+      <h2>Paragraphs</h2>
+      <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+      <p><del>This line of text is meant to be treated as deleted text.</del></p>
+      <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+      <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+      <p><u>This line of text will render as underlined</u></p>
+      <p><small>This line of text is meant to be treated as fine print.</small></p>
+      <p><strong>This line rendered as bold text.</strong></p>
+      <p><em>This line rendered as italicized text.</em></p>
+    </div>
+    <div class="col-6">
+      <h2>Text alignment</h2>
+      <p class="text-left">Text left</p>
+      <p class="text-center">Text center</p>
+      <p class="text-right">Text right</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-6">
+      <h2>Burger menu</h2>
+      <a href="#0" class="btn-burger" data-module="ToggleClass">
+        <span>Menu</span>
+      </a>
+
+      <a href="#0" class="hamburger" data-module="ToggleClass">Menu</a>
+    </div>
+    <div class="col-6">
+      <h2>Buttons</h2>
+      <button>type button</button>
+      <a href="javascript:void(0);" class="btn">type a</a>
+      <a href="javascript:void(0);" class="button">type a</a>
+    </div>
+  </div>
+
+  <ul>
+    {% for item in menu %}
+    <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-6">
+      <h2>Checkbox</h2>
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="cb-01">
+        <label for="cb-01">Checkbox 1</label>
+      </div>
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="cb-02">
+        <label for="cb-02">Checkbox 2</label>
+      </div>
+    </div>
+    <div class="col-6">
+      <h2>Radio</h2>
+      <div class="radio-wrapper">
+        <input type="radio" id="rdo-01" name="rdo-set-01">
+        <label for="rdo-01">Radio 1</label>
+      </div>
+      <div class="radio-wrapper">
+        <input type="radio" id="rdo-02" name="rdo-set-01">
+        <label for="rdo-02">Radio 2</label>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2>Modal</h2>
+  <a class="popup-with-zoom-anim" href="#popup">Open popup</a><br>
+
+  <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+  <div id="popup" class="mfp-hide">
+    <p>STRC Deposit instructions</p>
+    <p>
+      When you use our services, you’re trusting us with your information. We understand this is a big responsibility and work hard to protect your information and put you in control.<br />
+      This Privacy Policy is meant to help you understand what information we collect, why we collect it, and how you can update, manage, export, and delete your information.
+    </p>
+    <p>
+      We build a range of services that help millions of people daily to explore and interact with the world in new ways. Our services include:
+    </p>
+    <p>
+      Google apps, sites, and devices, like Search, YouTube, and Google Home<br />
+      Platforms like the Chrome browser and Android operating system<br />
+      Products that are integrated into third-party apps and sites, like ads and embedded Google Maps<br />
+      You can use our services in a variety of ways to manage your privacy. For example, you can sign up for a Google Account if you want to create and manage content like emails and photos, or see more relevant search results. And you can use many Google services when you’re signed out or without creating an account at all, like searching on Google or watching YouTube videos. You can also choose to browse the web privately using Chrome in Incognito mode. And across our services, you can adjust your privacy settings to control what we collect and how your information is used.
+    </p>
+    <p>
+      help explain things as clearly as possible, we’ve added examples, explanatory videos, and definitions for key terms. And if you have any questions about this Privacy Policy, you can contact us.
+    </p>
+    <div class="btn-wrapper">
+      <a href="#" class="btn--green btn">continue</a>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2>Grid</h2>
+  <div class="row">
+    <div class="col-1">.col-1</div>
+    <div class="col-1">.col-1</div>
+    <div class="col-1">.col-1</div>
+    <div class="col-1">.col-1</div>
+    <div class="col-1">.col-1</div>
+    <div class="col-1">.col-1</div>
+    <div class="col-1">.col-1</div>
+    <div class="col-1">.col-1</div>
+    <div class="col-1">.col-1</div>
+    <div class="col-1">.col-1</div>
+    <div class="col-1">.col-1</div>
+    <div class="col-1">.col-1</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-3">.col-3</div>
+    <div class="col-4">.col-4</div>
+    <div class="col-3">.col-3</div>
+    <div class="col-2">.col-2</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-8 col-push-4">.col-8 .col-push-4</div>
+    <div class="col-4 col-pull-8">.col-4 .col-pull-8</div>
+  </div>
+
+  <hr>
+
+  <h2>Slider</h2>
+  <ul data-module="Carousel">
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae recusandae magnam aspernatur dicta numquam, dolore aliquam. Ratione ad odio voluptate, temporibus earum maxime illo sed sint laudantium voluptates, commodi, facilis.
+    </li>
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sapiente totam placeat excepturi magnam voluptate ea fuga. Facere deleniti saepe enim numquam, fugit soluta repudiandae aut labore quaerat similique porro.
+    </li>
+  </ul>
+</div>
+{% endblock %}
