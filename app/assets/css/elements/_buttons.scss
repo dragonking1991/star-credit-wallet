@@ -56,9 +56,11 @@
 button, .button, .btn {
   display: inline-block;
   padding: 5px 10px;
+  min-width:220px;
   outline: none;
   background: none;
-  border: 1px solid $colorPrimary;
+  border-radius:4px;
+  border: none;
   cursor: pointer;
   color: $colorPrimary;
 
@@ -71,3 +73,21 @@ button, .button, .btn {
     color: #fff;
   }
 }
+
+.btn--green {
+  background:$green;
+  color:#fff;
+}
+.btn--red {
+  background:$red;
+  color:#fff;
+}
+.btn--line-green {
+  border: 2px solid $green;
+  color:#fff;
+}
+.btn--line-red {
+  border: 2px solid $red;
+  color:#fff;
+}
+
