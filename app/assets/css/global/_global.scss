@@ -3,11 +3,11 @@ body {
 	margin: 0;
 	padding: 0;
 
-	background: #fff;
-	color: #000;
+	background: #181818;
+	color: $colorPrimary;
 
 	font-family: $font-default;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 * {
@@ -21,13 +21,19 @@ img {
 
 a {
 	text-decoration: none;
+	outline: none;
+	color: $colorPrimary;
 }
 
 hr {
 	display: block;
 	margin: 20px auto;
 	border: none;
-	border-top: 1px solid black;
+	border-top: 1px solid #3f4048;
+}
+
+ul {
+	padding: 0;
 }
 
 .overflow-hidden {
@@ -62,10 +68,84 @@ hr {
 	color: $green;
 }
 
+.text-yellow {
+	color: $yellow;
+}
+
 .text-red {
 	color: $red;
 }
+.float-right {
+	float: right;
+}
 
 .container {
-	padding: 0 20px;
+	padding: 0 10px;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.text-small {
+	font-size: 10px;
+}
+
+.link-more {
+	color:#fff;
+	font-size:10px;
+	text-transform:uppercase;
+}
+.back-link {
+	color:#fff;
+	font-size:16px;
+	text-transform:uppercase;
+	i {
+		margin-right: 10px;
+	}
+}
+
+.block__tittle {
+	margin: 0 0 10px ;
+	text-align: center;
+}
+.block__desc {
+	margin: 0 0 10px ;
+	text-align: center;
+}
+.block {
+	margin: 20px 0;
+	padding: 20px;
+	border:1px solid #3f4048;
+	@include screen(medium){
+		padding: 24px 32px 20px;
+	}
+}
+.link {
+	border-bottom:1px solid;
+}
+
+.show-style {
+	margin: 0;
+	list-style: none;
+	@include absolute(top 10px right 10px);
+	li {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.list--toggle {
+	p {
+		display: none;
+	}
+}
+.hide-md {
+	@include screen(medium){
+		display:none;
+	}
+}
+.show-md {
+	@include screen(medium, false){
+		display:none;
+	}
 }

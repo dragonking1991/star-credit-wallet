@@ -1,9 +1,24 @@
 /* Styles for dialog window */
-#popup {
-	background: white;
+// #popup {
+// 	background: white;
+// 	padding: 20px 30px;
+// 	text-align: left;
+// 	max-width: 400px;
+// 	margin: 40px auto;
+// 	position: relative;
+// }
+.mfp-content {
+	background: #161616;
 	padding: 20px 30px;
 	text-align: left;
-	max-width: 400px;
+	max-width: 810px;
 	margin: 40px auto;
 	position: relative;
+	color: $colorPrimary;
+}
+
+.mfp-close-btn-in .mfp-close {
+    color: #fff;
+    font-size: 36px;
+    top: -45px;
 }

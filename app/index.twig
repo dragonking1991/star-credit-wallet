@@ -2,276 +2,278 @@
 
 {# If rename this file, rename in gulp 'html' task as well #}
 {% block page %}
-<section class="section account__header">
-	<div class="container">
-		<h3>Current balance | STRC</h3>
-		<p>
-			<span class="big-number">7.5654</span>
-			<a href="#" class="btn btn--green">$ Buy</a>
-			<a href="#" class="btn btn--line-green">+ Deposit</a>
-			<a href="#" class="btn btn--line-red">- Withdraw</a>
-		</p>
+	<section class="section account__header">
+		<div class="container">
+			<span class="text-small">Current balance | STRC</span>
+			<p>
+				<span class="big-number">7.5654</span>
+				<a href="#" class="btn btn--green">$ Buy</a>
+				<a href="#" class="btn btn--line-green">+ Deposit</a>
+				<a href="#" class="btn btn--line-red">- Withdraw</a>
+			</p>
 
-		<div class="user__block">
-			<h3><span class="notify">2</span> User name</h3>
+			<div class="user__block">
+				<h3><span class="notify">2</span> User name</h3>
+			</div>
 		</div>
-	</div>
-</section>
-<section class=" section transaction">
-	<div class="container">
-		<div class="transaction__block">
-			<div class="transaction__header">
-				<h2 class="block-title">Transactions</h2>
-				<ul>
-					<li><a href="#" class="gird-style">gird</a></li>
-					<li><a href="#" class="list-style">list</a></li>
+	</section>
+	<section class=" section transaction">
+		<div class="container">
+			<div class="transaction__block">
+				<div class="transaction__header">
+					<h2 class="block-title">Transactions</h2>
+					<ul class="show-style">
+						<li><a href="#" class="gird-style">gird</a></li>
+						<li><a href="#" class="list-style">list</a></li>
+					</ul>
+				</div>
+				<div class="transaction__wrapper">
+					<div class="item">
+						<div class="transaction__icon"></div>
+						<div class="transaction__credit"><i class="fa fa-arrow-right text-red"></i> 5 credits</div>
+						<div class="transaction__activity"> transfered</div>
+						<div class="transaction__status text-yellow"> complete <i class="fa fa-check"></i></div>
+						<div class="transaction__time">24 apr 2018 - 18:35</div>
+					</div>
+					<div class="item">
+						<div class="transaction__icon"></div>
+						<div class="transaction__credit"><i class="fa fa-arrow-right text-green"></i> 5 credits</div>
+						<div class="transaction__activity"> transfered</div>
+						<div class="transaction__status text-gray"> pending <i class="fa fa-clock"></i></div>
+						<div class="transaction__time">24 apr 2018 - 18:35</div>
+					</div>
+					<div class="item">
+						<div class="transaction__icon"></div>
+						<div class="transaction__credit"><i class="fa fa-arrow-right"></i> 5 credits</div>
+						<div class="transaction__activity"> transfered</div>
+						<div class="transaction__status text-yellow"> complete <i class="fa fa-check"></i></div>
+						<div class="transaction__time">24 apr 2018 - 18:35</div>
+					</div>
+				</div>
+			</div>
+			<div class="notify__block">
+				<h2 class="block-tittle">Notifications</h2>
+				<ul class="notify__wrapper">
+					<li><i class="fa fa-arrow-left"></i> You have received a new transfer</li>
+					<li><i class="fa fa-arrow-left"></i> You have received a new transfer</li>
+					<li><i class="fa fa-arrow-left"></i> You have received a new transfer</li>
+					<li><i class="fa fa-arrow-left"></i> You have received a new transfer</li>
 				</ul>
 			</div>
-			<div class="transaction__wrapper">
-				<div class="item">
-					<div class="transaction__icon"></div>
-					<div class="transaction__credit"><i class="fa fa-arrow-right"></i> 5 credits</div>
-					<div class="transaction__activity"> transfered</div>
-					<div class="transaction__status text-yellow"> complete <i class="fa fa-stick"></i></div>
-					<div class="transaction__time">24 apr 2018 - 18:35</div>
-				</div>
-				<div class="item">
-					<div class="transaction__icon"></div>
-					<div class="transaction__credit"><i class="fa fa-arrow-right"></i> 5 credits</div>
-					<div class="transaction__activity"> transfered</div>
-					<div class="transaction__status text-gray"> pending <i class="fa fa-clock"></i></div>
-					<div class="transaction__time">24 apr 2018 - 18:35</div>
-				</div>
-				<div class="item">
-					<div class="transaction__icon"></div>
-					<div class="transaction__credit"><i class="fa fa-arrow-right"></i> 5 credits</div>
-					<div class="transaction__activity"> transfered</div>
-					<div class="transaction__status text-yellow"> complete <i class="fa fa-stick"></i></div>
-					<div class="transaction__time">24 apr 2018 - 18:35</div>
-				</div>
-			</div>
 		</div>
-		<div class="notify__block">
-			<h2 class="block-tittle">Notifications</h2>
-			<ul class="notify__wrapper">
-				<li><i class="fa fa-arrow-left"></i> You have received a new transfer</li>
-				<li><i class="fa fa-arrow-left"></i> You have received a new transfer</li>
-				<li><i class="fa fa-arrow-left"></i> You have received a new transfer</li>
-				<li><i class="fa fa-arrow-left"></i> You have received a new transfer</li>
-			</ul>
+		<div class="btn__wrapper text-center">
+			<a href="#" class="link-more">Load more<br /><i class="fa fa-arrow-down"></i></a>
 		</div>
-	</div>
-	<div class="btn__wrapper text-center">
-		<a href="#" class="">Load more<br /><i class="fa fa-arrow-down"></i></a>
-	</div>
-</section>
+	</section>
 
-<section class="section confirm-withdraw">
-	<div class="container">
-		<a href="#" class="back-link"><i class="fa fa-arrow-left"></i> Confirm withdraw</a>
-		<div class="block block-order">
-			<h3 class="block__tittle">Your Order</h3>
-			<p class="block__desc">Your transfer was successful.</p>
-			<div class="order__wrapper">
-				<p class="order__item">
-					<span class="order__time">Thursday, May 28, 6:00 PM</span><br />
-					<span class="order__thing">StarCredits</span>
-					<span class="order__prize float--right">2.00</span>
-				</p>
-				<hr />
-				<p>To: User Address</p>
-			</div>
-			<div class="btn-wrapper">
-				<a href="#" class="btn btn--green">Continue</a>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="section confirm-purchase">
-	<div class="container">
-		<a href="#" class="back-link"><i class="fa fa-arrow-left"></i> Confirm purchase</a>
-		<div class="block block-order">
-			<h3 class="block__tittle">Your Order</h3>
-			<p class="block__desc">Your purchase was successful.</p>
-			<div class="order__wrapper">
-				<p class="order__item">
-					<span class="order__time">Thursday, May 28, 6:00 PM</span><br />
-					<span class="order__thing">5 x Package of 5 StarCredits</span>
-					<span class="order__prize float--right">$5.00</span>
-				</p>
-				<hr />
-				<p>Subtotal <span class="float--right">$25.00</span></p>
-				<p>Service Fee <span class="float--right">$1.59</span></p>
-				<hr />
-				<p>Total <span class="order__total float--right">$26.59</span></p>
-			</div>
-			<div class="btn-wrapper">
-				<a href="#" class="btn btn--green">Continue</a>
+	<section class="section confirm-withdraw">
+		<div class="container">
+			<a href="#" class="back-link"><i class="fa fa-arrow-left"></i> Confirm withdraw</a>
+			<div class="block block-order">
+				<h3 class="block__tittle">Your Order</h3>
+				<p class="block__desc">Your transfer was successful.</p>
+				<div class="order__wrapper">
+					<p class="order__item">
+						<span class="order__time">Thursday, May 28, 6:00 PM</span><br />
+						<span class="order__thing">StarCredits</span>
+						<span class="order__prize float-right">2.00</span>
+					</p>
+					<hr />
+					<p>To: User Address</p>
+				</div>
+				<div class="btn-wrapper">
+					<a href="#" class="btn btn--green">Continue</a>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+	<section class="section confirm-purchase">
+		<div class="container">
+			<a href="#" class="back-link"><i class="fa fa-arrow-left"></i> Confirm purchase</a>
+			<div class="block block-order">
+				<h3 class="block__tittle">Your Order</h3>
+				<p class="block__desc">Your purchase was successful.</p>
+				<div class="order__wrapper">
+					<p class="order__item">
+						<span class="order__time">Thursday, May 28, 6:00 PM</span><br />
+						<span class="order__thing">5 x Package of 5 StarCredits</span>
+						<span class="order__prize float-right">$5.00</span>
+					</p>
+					<hr />
+					<p>Subtotal <span class="float-right">$25.00</span></p>
+					<p>Service Fee <span class="float-right">$1.59</span></p>
+					<hr />
+					<p>Total <span class="order__total float-right">$26.59</span></p>
+				</div>
+				<div class="btn-wrapper">
+					<a href="#" class="btn btn--green">Continue</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<section class="section payment">
-	<div class="container">
-		<a href="#" class="back-link"><i class="fa fa-arrow-left"></i> Payment</a>
-		<div class="block block-order">
-			<h3 class="block__tittle">Buy 5 Packs STRC for $25</h3>
-			<p class="block__desc">Purchase StarCredits via Stripe Payment gateway/processing.</p>
-			<div class="form__wrapper">
-				<div class="input__wrapper">
-					<label for="name-card" >Name on card</label>
-					<input type="text" name="name-card" id="name-card"/>
-				</div>
-				<div class="input__wrapper">
-					<label for="card-number" >Card Number</label>
-					<input type="text" name="card-number" id="card-number"/>
-				</div>
-				<div class="form--half">
+	<section class="section payment">
+		<div class="container">
+			<a href="#" class="back-link"><i class="fa fa-arrow-left"></i> Payment</a>
+			<div class="block block-order">
+				<h3 class="block__tittle">Buy 5 Packs STRC for $25</h3>
+				<p class="block__desc">Purchase StarCredits via Stripe Payment gateway/processing.</p>
+				<div class="form__wrapper">
 					<div class="input__wrapper">
-						<label for="card-date" >MM/YY</label>
-						<input type="text" name="card-date" id="card-date"/>
+						<label for="name-card" >Name on card</label>
+						<input type="text" name="name-card" id="name-card"/>
 					</div>
 					<div class="input__wrapper">
-						<label for="cvc" >CVC</label>
-						<input type="text" name="cvc" id="cvc"/>
+						<label for="card-number" >Card Number</label>
+						<input type="text" name="card-number" id="card-number"/>
+					</div>
+					<div class="form--half">
+						<div class="input__wrapper">
+							<label for="card-date" >MM/YY</label>
+							<input type="text" name="card-date" id="card-date"/>
+						</div>
+						<div class="input__wrapper">
+							<label for="cvc" >CVC</label>
+							<input type="text" name="cvc" id="cvc"/>
+						</div>
+					</div>
+					<div class="checkbox-wrapper">
+						<input type="checkbox" name='remember-credit' id="remember-credit" />
+						<label for="remember-credit">Remember credit card</label>
 					</div>
 				</div>
+				<div class="btn-wrapper">
+					<a href="#" class="btn btn--green">BUY</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section withdraw">
+		<div class="container">
+			<h2>Withdraw</h2>
+			<div class="block block-order">
+				<p class="block__desc">Enter number of StarCredits to withdraw</p>
+				<div class="form__wrapper">
+					<div class="input__wrapper input-number">
+						<span class="increase"></span>
+						<span class="reduce"></span>
+						<input type="text" value=" 2.00" />
+						<b>STRC</b>
+					</div>
+				</div>
+				<p>Enter external destination address to transfer/withdraw </p>
+				<div class="input__wrapper">
+					<label for="address">To Address</label>
+					<input type="text" name='address' id="address">
+				</div>
+				<div class="btn-wrapper">
+					<a href="#" class="btn btn--green">Withdraw</a><br />
+					<a href="#" class="link">Withdraw entire balance</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section purchase">
+		<div class="container">
+			<h2>Purchase
+				<a href="#" class="btn--green btn">buy discount codes</a>
+			</h2>
+			<div class="block block-order">
+				<p class="block__desc">Enter quantity of packs</p>
+				<div class="form__wrapper">
+					<div class="input__wrapper">
+						<span class="increase"></span>
+						<span class="reduce"></span>
+						<input type="text" value=" 5 Packs" />
+						<b>STRC</b>
+					</div>
+				</div>
+				<p>Purchase package of 5 StarCredits for $5. Maximum 100 total credits.</p>
+				<div class="btn-wrapper">
+					<a href="#" class="btn btn--green">BUY</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section setting">
+		<div class="container">
+			<a href="#" class="back-link"><i class="fa fa-arrow-left"></i> Settings</a>
+			<div class="block">
+				<h3>Two-factor authentication</h3>
+				<p>Two-factor authentication is a security process where the user provides two forms of ID to log in. It helps keep your account safe.</p>
 				<div class="checkbox-wrapper">
-					<input type="checkbox" name='remember-credit' id="remember-credit" />
-					<label for="remember-credit">Remember credit card</label>
+					<input type="checkbox" name='enable' id="enable" />
+					<label for="enable">Enable 2-factor authentication</label>
+				</div>
+				<p class="note">Use google authenticator app for two factor authentication</p>
+				<div class="btn-wrapper">
+					<a href="#" class="btn btn--line-green">Configure Authenticator</a>
 				</div>
 			</div>
-			<div class="btn-wrapper">
-				<a href="#" class="btn btn--green">BUY</a>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="section withdraw">
-	<div class="container">
-		<h2>Withdraw</h2>
-		<div class="block block-order">
-			<p class="block__desc">Enter number of StarCredits to withdraw</p>
-			<div class="form__wrapper">
+			<div class="block">
+				<h3>Change Password </h3>
+				<p>Passwords need to be at least 8 characters in length and include at least one lowercase letter, uppercase letter, number and symbol.</p>
 				<div class="input__wrapper">
-					<span class="increase"></span>
-					<span class="reduce"></span>
-					<input type="text" value=" 2.00" />
-					<b>STRC</b>
+					<label for="pass" >Password</label>
+					<input type="password" name="pass" id="pass"/>
 				</div>
-			</div>
-			<p>Enter external destination address to transfer/withdraw </p>
-			<div class="input__wrapper">
-				<label for="address">To Address</label>
-				<input type="text" name='address' id="address">
-			</div>
-			<div class="btn-wrapper">
-				<a href="#" class="btn btn--green">Withdraw</a><br />
-				<a href="#" class="link">Withdraw entire balance</a>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="section purchase">
-	<div class="container">
-		<h2>Purchase
-			<a href="#" class="btn--green">buy discount codes</a>
-		</h2>
-		<div class="block block-order">
-			<p class="block__desc">Enter quantity of packs</p>
-			<div class="form__wrapper">
 				<div class="input__wrapper">
-					<span class="increase"></span>
-					<span class="reduce"></span>
-					<input type="text" value=" 5 Packs" />
-					<b>STRC</b>
+					<label for="repeat-pass" >Repeat Password</label>
+					<input type="password" name="repeat-pass" id="repeat-pass"/>
 				</div>
 			</div>
-			<p>Purchase package of 5 StarCredits for $5. Maximum 100 total credits.</p>
+			<div class="block">
+				<h3>Email</h3>
+				<div class="input__wrapper">
+					<label for="email" >Email</label>
+					<input type="text" name="email" id="email"/>
+				</div>
+			</div>
+			<div class="block">
+				<h3>User name</h3>
+				<div class="input__wrapper">
+					<label for="name-user" >User name</label>
+					<input type="text" name="name-user" id="name-user"/>
+				</div>
+			</div>
 			<div class="btn-wrapper">
-				<a href="#" class="btn btn--green">BUY</a>
+				<a href="#" class="btn btn--green">SAVE</a>
+				<p>For any issues loading or saving, please contact Support.</p>
 			</div>
-		</div>
-	</div>
-</section>
-
-<section class="section setting">
-	<div class="container">
-		<a href="#" class="back-link"><i class="fa fa-arrow-left"></i> Settings</a>
-		<div class="block">
-			<h3>Two-factor authentication</h3>
-			<p>Two-factor authentication is a security process where the user provides two forms of ID to log in. It helps keep your account safe.</p>
-			<div class="checkbox-wrapper">
-				<input type="checkbox" name='enable' id="enable" />
-				<label for="enable">Enable 2-factor authentication</label>
-			</div>
-			<p class="note">Use google authenticator app for two factor authentication</p>
-			<a href="#" class="btn btn--line-green">Configure Authenticator</a>
-		</div>
-		<div class="block">
-			<h3>Change Password </h3>
-			<p>Passwords need to be at least 8 characters in length and include at least one lowercase letter, uppercase letter, number and symbol.</p>
-			<div class="input-wrapper">
-				<label for="pass" >Password</label>
-				<input type="password" name="pass" id="pass"/>
-			</div>
-			<div class="input-wrapper">
-				<label for="repeat-pass" >Repeat Password</label>
-				<input type="password" name="repeat-pass" id="repeat-pass"/>
-			</div>
-		</div>
-		<div class="block">
-			<h3>Email</h3>
-			<div class="input-wrapper">
-				<label for="email" >Email</label>
-				<input type="text" name="email" id="email"/>
-			</div>
-		</div>
-		<div class="block">
-			<h3>User name</h3>
-			<div class="input-wrapper">
-				<label for="name-user" >User name</label>
-				<input type="text" name="name-user" id="name-user"/>
-			</div>
-		</div>
-		<div class="btn-wrapper">
-			<a href="#" class="btn btn--green">SAVE</a>
-			<p>For any issues loading or saving, please contact Support.</p>
-		</div>
-	</div>
-	
-</section>
-
-<section class="section clue text-center">
-	<div class="container">
-		<h3>Unlock content</h3>
-		<p>ADDITIONAL SYSOP ASSISTANCE AVAILABLE <br />
-		STARCREDITS REQUIRED: .1 STRC</p>
-
-		<div class="clue__box">
-			<p class="clue__time">Thursday, May 28, 6:00 PM</p>
-			<ul class="list--toggle">
-				<li>
-					<h3>Clue 1</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis natus vitae deleniti cum, dolorem dicta, similique voluptates laudantium, labore quibusdam possimus sint nostrum commodi eos! Ad corporis quo rerum!</p>
-				</li>
-				<li>
-					<h3>Clue 2</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis natus vitae deleniti cum, dolorem dicta, similique voluptates laudantium, labore quibusdam possimus sint nostrum commodi eos! Ad corporis quo rerum!</p>
-				</li>
-				<li>
-					<h3>Clue 3</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis natus vitae deleniti cum, dolorem dicta, similique voluptates laudantium, labore quibusdam possimus sint nostrum commodi eos! Ad corporis quo rerum!</p>
-				</li>
-			</ul>
-		</div>
-		<div class="btn-wrapper">
-			<a href="#" class="btn btn--green">DONE</a>
 		</div>
 
-	</div>
-</section>
+	</section>
 
-{% endblock %}
+	<section class="section clue text-center">
+		<div class="container">
+			<h3>Unlock content</h3>
+			<p>ADDITIONAL SYSOP ASSISTANCE AVAILABLE <br />
+				STARCREDITS REQUIRED: .1 STRC</p>
+
+				<div class="clue__box">
+					<p class="clue__time">Thursday, May 28, 6:00 PM</p>
+					<ul class="list--toggle">
+						<li>
+							<h3>Clue 1</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis natus vitae deleniti cum, dolorem dicta, similique voluptates laudantium, labore quibusdam possimus sint nostrum commodi eos! Ad corporis quo rerum!</p>
+						</li>
+						<li>
+							<h3>Clue 2</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis natus vitae deleniti cum, dolorem dicta, similique voluptates laudantium, labore quibusdam possimus sint nostrum commodi eos! Ad corporis quo rerum!</p>
+						</li>
+						<li>
+							<h3>Clue 3</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis natus vitae deleniti cum, dolorem dicta, similique voluptates laudantium, labore quibusdam possimus sint nostrum commodi eos! Ad corporis quo rerum!</p>
+						</li>
+					</ul>
+				</div>
+				<div class="btn-wrapper">
+					<a href="#" class="btn btn--green">DONE</a>
+				</div>
+
+			</div>
+		</section>
+
+	{% endblock %}

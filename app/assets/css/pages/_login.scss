@@ -1,0 +1,42 @@
+.sidebar {
+	width: 435px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 2;
+	background: #2a2a2a;
+
+	figure {
+		@include absolute(top 60% left 50%);
+		transform: translate(-50%, -50%);
+	}
+	.slogan {
+		font-size: 30px;
+		span {
+			font-size: 16px;
+		}
+	}
+}
+
+.sidebar__wrapper {
+}
+
+.tab {
+	@extend %clearfix;
+	font-size:0;
+	@include screen(medium, false){
+		text-align: center;
+	}
+
+	li {
+		display:inline-block;
+		font-size: 14px;
+		border-bottom: 2px solid #3f4048;
+		@include screen(medium)
+		a {
+			display:block;
+			padding: 10px 30px;
+		}
+	}
+}

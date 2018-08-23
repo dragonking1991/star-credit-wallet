@@ -13,8 +13,8 @@ export default class Modal {
 		$('.popup-with-zoom-anim').magnificPopup({
 			type: 'inline',
 
-			fixedContentPos: false,
-			fixedBgPos: true,
+			// fixedContentPos: false,
+			// fixedBgPos: true,
 
 			overflowY: 'auto',
 
