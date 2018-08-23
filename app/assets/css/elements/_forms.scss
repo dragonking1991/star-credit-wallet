@@ -1,5 +1,5 @@
 /* Checkbox */
-.checkbox-wrapper {
+.checkbox__wrapper {
 	margin-bottom: 20px;
 	label {
 		cursor: pointer;
@@ -28,7 +28,7 @@
 }
 
 /* Radio */
-.radio-wrapper {
+.radio__wrapper {
 	label {
 		cursor: pointer;
 
@@ -132,6 +132,24 @@
   }
 }
 
+.input__value-ctrl {
+	input {
+		display:inline-block;
+		vertical-align:middle;
+		height:88px;
+		width: 101px;
+		font-size:40px;
+		border: 1px solid #3f4048;
+		color: #f1f1f1;
+	}
+	b {
+		margin-left: 10px;
+		display:inline-block;
+		font-size:16px;
+		vertical-align:middle;
+	}
+}
+
 .form--half {
 	@extend %clearfix;
 	margin: 0 -1.5% 20px;
@@ -141,4 +159,5 @@
 		margin: 0 1.5%;
 	}
 }
+
 

@@ -13,7 +13,8 @@
 			</p>
 
 			<div class="user__block">
-				<h3><span class="notify">2</span> User name</h3>
+				<span class="notify">2</span><h3 class="show-md"> User name</h3>
+				<a href="#" class="btn-burger hide-md"><span></span></a>
 			</div>
 		</div>
 	</section>
@@ -21,7 +22,7 @@
 		<div class="container">
 			<div class="transaction__block">
 				<div class="transaction__header">
-					<h2 class="block-title">Transactions</h2>
+					<h3 class="block-title">Transactions</h3>
 					<ul class="show-style">
 						<li><a href="#" class="gird-style">gird</a></li>
 						<li><a href="#" class="list-style">list</a></li>
@@ -52,7 +53,7 @@
 				</div>
 			</div>
 			<div class="notify__block">
-				<h2 class="block-tittle">Notifications</h2>
+				<h3 class="block-tittle">Notifications</h3>
 				<ul class="notify__wrapper">
 					<li><i class="fa fa-arrow-left"></i> You have received a new transfer</li>
 					<li><i class="fa fa-arrow-left"></i> You have received a new transfer</li>
@@ -137,7 +138,7 @@
 							<input type="text" name="cvc" id="cvc"/>
 						</div>
 					</div>
-					<div class="checkbox-wrapper">
+					<div class="checkbox__wrapper">
 						<input type="checkbox" name='remember-credit' id="remember-credit" />
 						<label for="remember-credit">Remember credit card</label>
 					</div>
@@ -151,15 +152,17 @@
 
 	<section class="section withdraw">
 		<div class="container">
-			<h2>Withdraw</h2>
+			<h3>Withdraw</h3>
 			<div class="block block-order">
 				<p class="block__desc">Enter number of StarCredits to withdraw</p>
 				<div class="form__wrapper">
-					<div class="input__wrapper input-number">
-						<span class="increase"></span>
-						<span class="reduce"></span>
-						<input type="text" value=" 2.00" />
-						<b>STRC</b>
+					<div class="input__value-ctrl">
+						<div class="input__ctrl">
+							<span class="input__increase"></span>
+							<span class="input__reduce"></span>
+						</div>
+						<input type="text" value="2.00" />
+						<b class="text-green">STRC</b>
 					</div>
 				</div>
 				<p>Enter external destination address to transfer/withdraw </p>
@@ -176,17 +179,19 @@
 	</section>
 	<section class="section purchase">
 		<div class="container">
-			<h2>Purchase
+			<h3>Purchase
 				<a href="#" class="btn--green btn">buy discount codes</a>
-			</h2>
+			</h3>
 			<div class="block block-order">
 				<p class="block__desc">Enter quantity of packs</p>
 				<div class="form__wrapper">
-					<div class="input__wrapper">
-						<span class="increase"></span>
-						<span class="reduce"></span>
+					<div class="input__value-ctrl">
+						<div class="input__ctrl">
+							<span class="input__increase"></span>
+							<span class="input__reduce"></span>
+						</div>
 						<input type="text" value=" 5 Packs" />
-						<b>STRC</b>
+						<b class="text-green">STRC</b>
 					</div>
 				</div>
 				<p>Purchase package of 5 StarCredits for $5. Maximum 100 total credits.</p>
@@ -203,7 +208,7 @@
 			<div class="block">
 				<h3>Two-factor authentication</h3>
 				<p>Two-factor authentication is a security process where the user provides two forms of ID to log in. It helps keep your account safe.</p>
-				<div class="checkbox-wrapper">
+				<div class="checkbox__wrapper">
 					<input type="checkbox" name='enable' id="enable" />
 					<label for="enable">Enable 2-factor authentication</label>
 				</div>
@@ -254,7 +259,7 @@
 
 				<div class="clue__box">
 					<p class="clue__time">Thursday, May 28, 6:00 PM</p>
-					<ul class="list--toggle">
+					<ul class="list--accodion">
 						<li>
 							<h3>Clue 1</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis natus vitae deleniti cum, dolorem dicta, similique voluptates laudantium, labore quibusdam possimus sint nostrum commodi eos! Ad corporis quo rerum!</p>

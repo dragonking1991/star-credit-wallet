@@ -27,6 +27,15 @@ export default class Form {
 			}
 		});
 
+		$(document).on( 'click','.list--accodion li', function(){
+			if (!$(this).hasClass('active')) {
+				$(this).parent('.list--accodion').find('li').removeClass('active');
+				$(this).addClass('active');
+			}
+			else {
+				$(this).removeClass('active');
+			}
+		});
 		$('input, textarea').each(function(){
 			if ( $(this).val() != '') {
 				var wrap_input = $(this).parents('.input__wrapper');

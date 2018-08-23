@@ -10,6 +10,10 @@
 }
 
 .user__block {
+	@include absolute(top 20px right 15px);
+}
+
+.user__block {
 	.notify {
 		height:20px;
 		width:20px;
@@ -20,6 +24,13 @@
 		background:$green;
 		color:#fff;
 		display:inline-block;
+		@include screen(medium){
+			margin-right: 5px;
+		}
+	}
+	h3 {
+		display:inline-block;
+		vertical-align:middle;
 	}
 }
 
@@ -64,14 +75,28 @@
 		position: relative;
 		border: solid 1px #3f4048;
 		height: 72px;
+		@extend %clearfix;
 		@include screen(medium){
 			height: 48px;
+			> div {
+				display:inline-block;
+				vertical-align:middle;
+				text-align:center;
+			}
+
 		}
 	}
 }
 
 .block-title {
 	font-size: 18px;
+}
+.transaction__icon {
+
+	@include screen(medium){
+		display: inline-block;
+		width: 15%;
+	}
 }
 
 .transaction__credit {
@@ -80,6 +105,8 @@
 	margin-bottom: 10px;
 	@include screen(medium){
 		font-size: 16px;
+		display: inline-block;
+		width: 20%;
 	}
 }
 .transaction__activity {
@@ -87,19 +114,27 @@
 	text-transform: capitalize;
 	@include screen(medium){
 		font-size: 14px;
+		display: inline-block;
+		width: 20%;
 	}
 }
 .transaction__status {
 	text-transform: capitalize;
-	@include screen(medium, false){
-		@include absolute(top 10px right 20px);
+	@include absolute(top 10px right 20px);
+	@include screen(medium){
+		position:static;
+		display: inline-block;
+		width: 20%;
 	}
 }
 .transaction__time {
+	@include absolute(bottom 20px right 20px);
 	font-size: 10px;
 	color: #a7a4a8;
-	@include screen(medium, false){
-		@include absolute(bottom 20px right 20px);
+	@include screen(medium){
+		position:static;
+		display: inline-block;
+		width: 20%;
 	}
 }
 

@@ -65,18 +65,18 @@ ul {
 }
 
 .text-green {
-	color: $green;
+	color: $green !important;
 }
 
 .text-yellow {
-	color: $yellow;
+	color: $yellow !important;
 }
 
 .text-red {
-	color: $red;
+	color: $red !important;
 }
 .float-right {
-	float: right;
+	float: right !important;
 }
 
 .container {
@@ -113,8 +113,9 @@ ul {
 	text-align: center;
 }
 .block {
-	margin: 20px 0;
+	margin: 20px auto;
 	padding: 20px;
+	max-width:590px;
 	border:1px solid #3f4048;
 	@include screen(medium){
 		padding: 24px 32px 20px;
@@ -134,9 +135,29 @@ ul {
 	}
 }
 
-.list--toggle {
+.list--accodion {
+	list-style:none;
+	text-align:left;
+	h3 {
+		position: relative;
+		padding-left: 30px;
+		&:after {
+			content:"\f107";
+			font: normal normal normal 22px/1 FontAwesome;
+			@include absolute(top 0px left 0px);
+			color:#cac9ca;
+		}
+	}
 	p {
 		display: none;
+	}
+	.active {
+		p {
+			display:block;
+		}
+		h3:after {
+			content:"\f106";
+		}
 	}
 }
 .hide-md {
