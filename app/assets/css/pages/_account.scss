@@ -89,6 +89,32 @@
 	}
 }
 
+.transaction--gird {
+	.transaction__icon {
+		@include screen(medium){
+
+		}
+	}
+	.transaction__credit {
+
+		@include screen(medium){
+			
+		}
+	}
+	.transaction__time {
+		
+		@include screen(medium){
+			
+		}
+	}
+	.transaction__status {
+		
+		@include screen(medium){
+			
+		}
+	}
+}
+
 .block-title {
 	font-size: 18px;
 }

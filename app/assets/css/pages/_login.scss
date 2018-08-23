@@ -44,8 +44,16 @@
 .tab {
 	@extend %clearfix;
 	font-size:0;
+
 	@include screen(medium, false){
 		text-align: center;
+	}
+
+	.active {
+		li {
+			color:#acaaad;
+			border-color:#acaaad;
+		}
 	}
 
 	li {
