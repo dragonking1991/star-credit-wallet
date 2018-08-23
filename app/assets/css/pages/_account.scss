@@ -1,0 +1,111 @@
+.big-number {
+	font-size: 48px;
+	color: #f1f1f1;	
+	vertical-align: middle;
+	display: inline-block;
+
+	@include screen(medium, false){
+		display: block;
+	}
+}
+
+.transaction {
+	.container {
+		@extend %clearfix;
+	}
+}
+
+.transaction__block {
+	@include screen(medium){
+		float: left; 
+		width: 70%;
+	}
+}
+.notify__block {
+	@include screen(medium){
+		float: left;
+		width: 30%;
+	}
+}
+
+.account__header {
+	.btn {
+		min-width: 80px;
+		vertical-align: middle;
+		margin: 5px 6px;
+		@include screen(medium){
+			min-width: 110px;
+			margin: 5px 8px;
+		}
+	}
+	p {
+		margin: 0;
+	}
+}
+
+.transaction__wrapper {
+	.item {
+		color: #acaaad;
+		padding: 10px;
+		border: solid 1px #3f4048;
+		height: 72px;
+		@include screen(medium){
+			height: 48px;
+		}
+	}
+}
+
+.block-title {
+	font-size: 18px;
+}
+
+.transaction__credit {
+	font-size: 14px;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	@include screen(medium){
+		font-size: 16px;
+	}
+}
+.transaction__activity {
+	font-size: 16px;
+	text-transform: capitalize;
+	@include screen(medium){
+		font-size: 14px;
+	}
+}
+.transaction__status {
+	text-transform: capitalize;
+	@include screen(medium, false){
+		float: right
+	}
+}
+.transaction__time {
+	font-size: 10px;
+	color: #a7a4a8;
+	@include screen(medium, false){
+		float: right;
+	}
+}
+
+.notify__wrapper{
+	border: 1px solid $colorPrimary;
+	padding: 10px;
+	li {
+		list-style: none;
+		font-size: 14px;
+		margin: 10px 0;
+		i {
+			margin-right: 10px;
+		}
+	}
+}
+
+.order__time {
+	color:#dddddd;
+	font-size: 10px;
+}
+
+.order__total {
+	font-size: 18px;
+}

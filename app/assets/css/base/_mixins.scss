@@ -253,13 +253,13 @@
 
 			@if $k > 0 {
 				$x: $k - 0.5;
-			} @elseif $k < 0 {
+			} @else if $k < 0 {
 				$x: $k + 0.5;
 			}
 
 			@if $i > 0 {
 				$y: $i - 0.5;
-			} @elseif $i < 0 {
+			} @else if $i < 0 {
 				$y: $i + 0.5;
 			}
 
@@ -407,33 +407,150 @@
 	}
 }
 
-@function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
+@mixin text($code: 8) {
+  @if ($code==1) {
+    font-size: 26px;
+		line-height: 30px;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		font-weight: $font-bold;
+
+		@include screen (small) {
+			font-size: 35px;
+			line-height: 45px;
+		}
+  } @else if ($code==2) {
+    font-size: 19px;
+		line-height: 24px;
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		font-weight: $font-bold;
+
+		@include screen (small) {
+			font-size: 30px;
+			line-height: 40px;
+		}
+  } @else if ($code==3) {
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.02em;
+		font-weight: $font-bold;
+
+		@include screen (small) {
+			font-size: 21px;
+			line-height: 26px;
+		}
+  } @else if ($code==4) {
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: 0.1em;
+		font-weight: $font-bold;
+
+		@include screen (small) {
+			font-size: 21px;
+			line-height: 28px;
+		}
+  } @else if ($code==5) {
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: 0.02em;
+		font-weight: $font-bold;
+		
+		@include screen (small) {
+			font-size: 18px;
+			line-height: 24px;
+		}
+  } @else if ($code==6) {
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.03em;
+		color: #968a7e;
+		font-weight: $font-semibold;
+		@include screen (small) {
+			font-size: 15px;
+			line-height: 20px;
+		}
+  } @else if ($code==7) {
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		font-weight: $font-bold;
+
+		@include screen (small) {
+			font-size: 16px;
+			line-height: 25px;
+		}
+  } @else if ($code==8) {
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: 0.02em;
+		font-weight: $font-bold;
+
+		@include screen (small) {
+			font-size: 15px;
+			line-height: 20px;
+		}
+  } @else if ($code==9) {
+		font-size: 11px;
+		line-height: 16px;
+		letter-spacing: 0.1em;
+		color: #f5a01a;
+		text-transform: uppercase;
+		font-weight: $font-bold;
+
+		@include screen (small) {
+			font-size: 15px;
+			line-height: 20px;
+		}
+  } @else if ($code==10) {
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.03em;
+		color: #968a7e;
+		font-weight: $font-bold;
+  } @else if ($code==11) {
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.03em;
+		font-weight: $font-semibold;
+  } @else if ($code==12) {
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.03em;
+		font-weight: $font-bold;
+  } @else if ($code==13) {
+		font-size: 12px;
+		line-height: 17px;
+		letter-spacing: 0.1;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		font-weight: $font-bold;
+  } @else if ($code==14) {
+		font-size: 29px;
+		line-height: 50px;
+		letter-spacing: 0.05em;
+		font-weight: $font-bold;
+  } @else if ($code==15) {
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.03em;
+		color: #FFFFFF;
+		font-weight: $font-bold;
+  } @else if ($code==16) {
+		font-size: 23px;
+		line-height: 27px;
+		letter-spacing: 0.05em;
+		color: #FFFFFF;
+		font-weight: $font-bold;
+  } @else if ($code==17) {
+		font-size: 26px;
+		line-height: 31px;
+		letter-spacing: 0.05em;
+		font-weight: $font-bold;
+	}
 }
 
-@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
-  $u1: unit($min-vw);
-  $u2: unit($max-vw);
-  $u3: unit($min-font-size);
-  $u4: unit($max-font-size);
-
-  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
-    & {
-      font-size: $min-font-size;
-      @media screen and (min-width: $min-vw) {
-        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-      }
-      @media screen and (min-width: $max-vw) {
-        font-size: $max-font-size;
-      }
-    }
-  }
-}
-
-@mixin hover {
-  .no-touchevents & {
-    &:hover {
-      @content
-    }
-  }
+@mixin letter-spacing ($spacing) {
+	letter-spacing: #{$spacing / 1000}em;
 }

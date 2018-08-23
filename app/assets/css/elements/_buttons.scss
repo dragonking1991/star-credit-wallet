@@ -1,3 +1,49 @@
+.btn {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 32px;
+  outline: none;
+  background: none;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #Fff;
+  font-size: 14px;
+  min-width: 200px;
+  text-transform: uppercase;
+  @include screen(medium){
+  }
+
+  &[disabled] {
+    cursor: not-allowed !important;
+  }
+
+}
+.btn-wrapper  {
+  text-align: center;
+  .btn {
+    margin: 20px 0;
+  }
+}
+
+.btn--green {
+  background: $green;
+}
+.btn--red {
+  background: $red;
+}
+
+.btn--line-red {
+  background: none;
+  border: 2px solid $red;
+}
+.btn--line-green {
+  background: none;
+  border: 2px solid $green;
+}
+
+
 .btn-burger {
   display: block;
   width: 40px;
@@ -51,23 +97,4 @@
 
 .hamburger {
   @include hamburger($colorBurger, $colorBurger, 30px, 20px, 2px, 3);
-}
-
-button, .button, .btn {
-  display: inline-block;
-  padding: 5px 10px;
-  outline: none;
-  background: none;
-  border: 1px solid $colorPrimary;
-  cursor: pointer;
-  color: $colorPrimary;
-
-  &[disabled] {
-    cursor: not-allowed !important;
-  }
-
-  @include hover {
-    background-color: $colorPrimary;
-    color: #fff;
-  }
 }

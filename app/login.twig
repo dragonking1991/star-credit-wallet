@@ -3,14 +3,16 @@
 {# If rename this file, rename in gulp 'html' task as well #}
 {% block page %}
 <section class="sidebar show-md">
-	<figure></figure>
-	<p class="slogan">
-		Reach <span>for</span><br />
-		<span>the</span> Stars
-	</p>
+	<div class="sidebar__wrapper">
+		<figure></figure>
+		<p class="slogan">
+			Reach <span>for</span><br />
+			<span>the</span> Stars
+		</p>
+	</div>
 
 </section>
-<section class="section login">
+<section class="section login"> btn
 	<div class="container">
 		<ul class="tab">
 			<li class="'active"><a href="#login-content">Login</a></li>
@@ -30,7 +32,7 @@
 				<input type="text" name="pass" id="pass">
 			</div>
 			<div class="btn-wrapper">
-				<a href="#" class="btn--green">Login</a>
+				<a href="#" class="btn--green btn">Login</a>
 			</div>
 			<p>By joining, you are indicating that you have read, understood and agree our <a href="#" class="link">Terms & Conditions</a>.</p>
 		</div>
@@ -49,7 +51,7 @@
 				<input type="text" name="email-signup" id="email-signup">
 			</div>
 			<div class="btn-wrapper">
-				<a href="#" class="btn--green">Sign up</a>
+				<a href="#" class="btn--green btn">Sign up</a>
 			</div>
 		</div>
 	</div>
@@ -87,7 +89,7 @@
 			<input type="checkbox" name="opt2" id="opt2">
 		</div>
 		<div class="btn-wrapper">
-			<a href="#" class="btn--green">Signup</a>
+			<a href="#" class="btn--green btn">Signup</a>
 		</div>
 	</div>
 </section>
@@ -102,7 +104,7 @@
 			<input type="text" name="verify" id="verify">
 		</div>
 		<div class="btn-wrapper">
-			<a href="#" class="btn--green">Login</a>
+			<a href="#" class="btn--green btn">Login</a>
 		</div>
 	</div>
 </section>
@@ -118,13 +120,13 @@
 	<div class="container">
 		<h3>Recover password</h3>
 		<p>We will send you an email with a link to reset your password.</p>
-	</div>
-	<div class="input__wrapper">
-		<label for="username-email">Username or Email</label>
-		<input type="text" name="username-email" id="username-email">
-	</div>
-	<div class="btn-wrapper">
-		<a href="#" class="btn--green">send mail</a>
+		<div class="input__wrapper">
+			<label for="username-email">Username or Email</label>
+			<input type="text" name="username-email" id="username-email">
+		</div>
+		<div class="btn-wrapper">
+			<a href="#" class="btn--green btn">send mail</a>
+		</div>
 	</div>
 </section>
 

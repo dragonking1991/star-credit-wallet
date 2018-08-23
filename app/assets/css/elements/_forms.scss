@@ -1,5 +1,6 @@
 /* Checkbox */
 .checkbox-wrapper {
+	margin-bottom: 20px;
 	label {
 		cursor: pointer;
 
@@ -53,3 +54,91 @@
 		}
 	}
 }
+
+
+/* Input */
+.input__wrapper{
+	margin-bottom: 10px;
+	height: 44px;
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #c6c6c6;
+
+	input {
+		padding: 0 15px;
+		outline: none;
+		border: none;
+		background: none;
+		width: 100%;
+		height: 44px;
+		font-size: 14px;
+		line-height: 18px;
+		color: #fff;
+		position: absolute;
+		top: 0;
+		left: 0;
+		&::-ms-clear {
+			display: none;
+		}
+	}
+
+  /* Textarea */
+  &.textarea-wrapper{
+  	height: 150px;
+  	overflow: hidden;
+
+  	textarea {
+  		padding: 0 15px;
+  		outline: none;
+  		border: none;
+  		background: none;
+  		width: 100%;
+  		height: 130px;
+  		font-size: 14px;
+  		line-height: 18px;
+  		position: absolute;
+  		top: 25px;
+
+  		left: 0;
+  	}
+  }
+
+  label {
+  	padding: 0 15px;
+  	top:9px;
+  	line-height: 20px;
+  	font-size:14px;
+
+  	position: absolute;
+  	left: 0;
+
+  	transition: top 0.2s ease;
+  }
+
+  &.focus {
+  	input {
+  		height: auto;
+  		top: 18px;
+  	}
+  	label {
+  		top: 0px;
+  		font-size: 13px;
+  	}
+  	&.textarea-input {
+  		input {
+  			height: 150px;
+  		}
+  	}
+  }
+}
+
+.form--half {
+	@extend %clearfix;
+	margin: 0 -1.5% 20px;
+	> div {
+		float: left;
+		width: 47%;
+		margin: 0 1.5%;
+	}
+}
+
