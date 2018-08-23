@@ -133,6 +133,12 @@
 }
 
 .input__value-ctrl {
+
+	.input__ctrl {
+		display:inline-block;
+		vertical-align:middle;
+	}
+
 	input {
 		display:inline-block;
 		vertical-align:middle;
