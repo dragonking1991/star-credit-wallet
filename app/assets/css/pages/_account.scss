@@ -76,6 +76,7 @@
 		border: solid 1px #3f4048;
 		height: 72px;
 		@extend %clearfix;
+		margin: 20px 0;
 		@include screen(medium){
 			height: 48px;
 			> div {

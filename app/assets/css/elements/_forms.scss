@@ -133,23 +133,54 @@
 }
 
 .input__value-ctrl {
+	text-align: center;
 
 	.input__ctrl {
 		display:inline-block;
 		vertical-align:middle;
+		span {
+			width:16px;
+			height:16px;
+			border-radius:50%;
+			color:$green;
+			border: 1px solid $green;
+			display: block;
+			margin: 5px 0;
+			position:relative;
+			&:before, &:after {
+				content:'';
+				@include absolute(top 50% left 50%);
+				transform: translate(-50%,-50%);
+				background: $green;
+				width: 60%;
+				height: 1px;
+			}
+			&:before {
+				height:60%;
+				width:1px;
+			}
+		}
+	}
+
+	.input__reduce {
+		&:before {
+			display: none;
+		}
 	}
 
 	input {
 		display:inline-block;
 		vertical-align:middle;
+		background:none;
 		height:88px;
-		width: 101px;
+		width: 200px;
+		text-align: center;
 		font-size:40px;
+		margin:0 10px;
 		border: 1px solid #3f4048;
 		color: #f1f1f1;
 	}
 	b {
-		margin-left: 10px;
 		display:inline-block;
 		font-size:16px;
 		vertical-align:middle;

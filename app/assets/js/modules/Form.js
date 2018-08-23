@@ -27,6 +27,14 @@ export default class Form {
 			}
 		});
 
+		$('input, textarea').each(function(){
+			if ( $(this).val() != '') {
+				var wrap_input = $(this).parents('.input__wrapper');
+				wrap_input.addClass('focus');
+			}
+		});
+
+		// accodion
 		$(document).on( 'click','.list--accodion li', function(){
 			if (!$(this).hasClass('active')) {
 				$(this).parent('.list--accodion').find('li').removeClass('active');
@@ -36,11 +44,7 @@ export default class Form {
 				$(this).removeClass('active');
 			}
 		});
-		$('input, textarea').each(function(){
-			if ( $(this).val() != '') {
-				var wrap_input = $(this).parents('.input__wrapper');
-				wrap_input.addClass('focus');
-			}
-		});
+
+
 	}
 }
